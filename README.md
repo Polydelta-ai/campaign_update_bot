@@ -1,7 +1,7 @@
 # campaign_update_bot
 A simple bot that reports out on outreach efforts
 
-v.1
+v.2
 
 __File Overview__ 
 1. The reply file grabs outreach data and
