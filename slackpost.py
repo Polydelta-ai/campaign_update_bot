@@ -1,14 +1,14 @@
 import requests
 import json
 import pandas as pd
+import os
 
 from buildmsg import BuildMsg
 
 def slackpost(campaign, df):
 
 	# Load Credentials
-	with open('secrets.json') as source:
-		secrets = json.load(source)
+	secrets = json.loads(os.environ['SECRETS'])
 	slack_url = secrets[campaign]
 
 	data = {
